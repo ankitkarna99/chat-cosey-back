@@ -25,7 +25,15 @@ const server = app.listen(8000, () => {
   console.log("Server listening on port 8000");
 });
 
-const io = require("socket.io")(server);
+const io = require("socket.io")(server, {
+  allowEIO3: true,
+  cors: {
+    origin: true,
+    methods: ['GET', 'POST'],
+    credentials: true
+  }
+});
+
 const jwt = require("jwt-then");
 
 const Message = mongoose.model("Message");
