@@ -15,7 +15,7 @@
     "express": "^4.17.3",
     "js-sha256": "^0.9.0",
     "jwt-then": "^1.0.1",
-    "mongoose": "^5.9.9",
+    "mongoose": "^5.13.17",
     "socket.io": "^2.5.0"
   }
 }
